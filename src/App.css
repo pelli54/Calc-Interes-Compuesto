@@ -1,0 +1,300 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    background: #333;
+    color: white;
+}
+.my
+{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mt
+{
+  margin-top: 30px;
+}
+.w-100
+{
+  width: 100%;
+}
+.w-25
+{
+  width: 25%;
+}
+.w-50
+{
+  width: 50%;
+}
+.w-75
+{
+  width: 75%;
+}
+.w-30
+{
+  width: 30%
+}
+.w-70
+{
+  width: 70%;
+}
+.bg-2
+{
+  background: #667;
+}
+.bg-1
+{
+  background: #445;
+}
+.add
+{
+  color: #3c3;
+}
+.container
+{
+  display: flex;
+  height: 100vh;
+}
+.noResult
+{
+  margin: 30px;
+  font-size: 3rem;
+}
+.container .content
+{
+  width:25%;
+  background: #555;
+  margin: 8px;
+  height: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container .content .title
+{
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 24px);
+  margin: 12px;
+  margin-bottom: 20px;
+  height: 28px;
+}
+.container .content .title span
+{
+  font-size: 16px;
+}
+.container .content .title i 
+{
+  height: 26px;
+  width: 26px;
+  background: #27f;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .helpContainer
+{
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  overflow-y: scroll;
+  height: calc(100% - 24px)
+}
+.content .form
+{
+  margin-left: 12px;
+  margin-right: 12px;
+  width: calc(100% - 24px);
+}
+.content .form .formGroup
+{
+  display: flex;
+}
+.content .form .formItem
+{
+  display: flex;
+  flex-direction: column;
+
+}
+.content .form .formItem input
+{
+  height: 28px;
+  background: #444;
+  color: #fff;
+  border-style: none;
+  margin-right: 2px;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+.content .form .formItem input:focus-visible
+{
+  outline: none;
+}
+.content .form label
+{
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.content .form .formGroup .formItem input
+{
+  height: 28px;
+  padding: 0;
+  padding-left: 8px;
+  background: #444;
+  color: #fff;
+  border-radius: 5px;
+  border-style: none;
+}
+.content .form .formGroup .formItem input:focus-visible
+{
+  outline: none;
+}
+.content .form .formGroup select
+{
+  height: 28px;
+  padding: 0;
+  background: #444;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+}
+.content .form .formGroup select:focus-visible
+{
+  outline: none;
+}
+.content .form button
+{
+  width: 100%;
+  height: 30px;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  background: #08b;
+}
+.content .form button:hover
+{
+  background: #19c;
+}
+.content .form button:focus-visible
+{
+  outline: none;
+}
+
+.result
+{
+  margin: 0.5rem;
+  height: calc(100% - 16px);
+  width:75%;
+  background: #555;
+  display: flex;
+  flex-direction: column;
+}
+.result .details
+{
+  display: flex;
+  width: calc(100% - 24px);
+  justify-content: flex-start;
+  margin: 12px;
+}
+.result .details span
+{
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 8px;
+  background: #4a4;
+}
+.result .table
+{
+  overflow-y: scroll;
+  height: calc(100% - 24px);
+}
+.result .table table
+{
+  width: 100%;
+}
+.result .table table thead
+{
+  background: #44a;
+}
+.result .table table thead tr .first
+{
+  width: 50px;
+}
+.result .table table tbody tr td
+{
+  text-align: center;
+}
+
+.mensaje
+{
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: 50px;
+  background: #a22;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f558;
+  text-align: center;
+}
+.mensaje span 
+{
+  margin-top: 5px;
+}
+
+@media(max-width: 1024px){
+  .container .content
+  {
+    width: 25%;
+  }
+  .result
+  {
+    width: 75%;
+  }
+}
+@media(max-width: 768px){
+  .container .content
+  {
+    width: 40%;
+  }
+  .result
+  {
+    width: 60%;
+  }
+}
+@media(max-width: 425px){
+  .container
+  {
+    flex-direction: column;
+  }
+  .container .content
+  {
+    width: calc(100% - 1rem);
+    height: 360px;
+  }
+  .container .result
+  {
+    width: calc(100% - 1rem);
+    height: calc(100% - 32px)
+  }
+  .container .result .table
+  {
+    width: 100%;
+  }
+  .result .details
+  {
+    width: calc(100% - 24px);
+    margin: 6px;
+  }
+  .result .details span
+  {
+    font-size: 14px;
+  }
+}
